@@ -7,7 +7,7 @@ This is an extension for Google Chrome based on [Instagram Video Downloader](htt
 ### Installation
 
 To install the extension follow these steps:
-* Clone the repository using `git clone {repo_link}`
+* Clone the repository using `git clone https://github.com/matteobergantin/Instagram-Video-Downloader-Extension.git`
 * Browse to the page [chrome://extensions/](chrome://extensions/)
 * Enable "Developer Mode" from the toggle switch on the upper right corner of the screen.
 * Click on "Load unpacked extension".
