@@ -1,0 +1,28 @@
+{
+    "name": "Instagram Video Downloader",
+    "description": "A simple Video/Audio Downloader for Instagram",
+    "version": "1.0",
+    "background": {
+        "service_worker": "main.js"
+    },
+    "permissions": ["scripting", "webNavigation", "storage"],
+    "host_permissions": ["http://www.instagram.com/*", "https://www.instagram.com/*"],
+    "web_accessible_resources": [
+        {
+          "resources": ["instagram.js"],
+          "matches": ["http://www.instagram.com/*", "https://www.instagram.com/*"],
+          "use_dynamic_url": true
+        }
+    ],
+    "action": {
+        "browser_style": true,
+        "default_title": "Instagram Video Downloader",
+        "default_popup": "popup/popup.html"
+    },
+    "icons": {
+        "16": "icons/icon16.png",
+        "64": "icons/icon64.png",
+        "128": "icons/icon128.png"
+    },
+    "manifest_version": 3
+}

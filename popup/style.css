@@ -1,0 +1,44 @@
+body {
+    background: #272727;
+    width: 250px;
+    height: 100px;
+}
+
+.slidebar.disabled {
+    background: lightcoral;
+}
+
+.slidebar.active {
+    background: springgreen;
+}
+
+.slidebar {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 125px;
+    height: 50px;
+    border-radius: 25px;
+    transition-duration: 750ms;
+}
+
+.slidebar::after {
+    position: absolute;
+    content: '';
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition-duration: 750ms;
+    background: white;
+}
+
+.slidebar.disabled::after {
+    left: 5px;
+}
+
+.slidebar.active::after {
+    left: calc(100% - 45px);
+}
